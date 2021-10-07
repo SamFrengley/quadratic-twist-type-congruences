@@ -1,0 +1,1 @@
+# quadratic-twist-type-congruences
