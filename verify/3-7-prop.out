@@ -1,0 +1,135 @@
+EXE=/alt/applic/magma/2.23-8/magma.avx64.exe
+Magma V2.23-8     Mon Nov  8 2021 11:53:26 on coral    [Seed = 1905854219]
+Type ? for help.  Type <Ctrl>-D to quit.
+Loading "../functions/qttcong.m"
+There are 60 groups which work mod 8
+Working with group X7
+-------------
+Working with group X20
+-------------
+Working with group X22
+-------------
+Working with group X23
+-------------
+Working with group X26
+-------------
+Working with group X55
+Wow, it works mod 16 
+-------------
+Working with group X56
+-------------
+Working with group X57
+-------------
+Working with group X60
+-------------
+Working with group X63
+-------------
+Working with group X64
+-------------
+Working with group X65
+-------------
+Working with group X68
+-------------
+Working with group X69
+-------------
+Working with group X73
+-------------
+Working with group X74
+-------------
+Working with group X76
+-------------
+Working with group X80
+-------------
+Working with group X83
+-------------
+Working with group X90
+-------------
+Working with group X91
+-------------
+Working with group X97
+-------------
+Working with group X191
+-------------
+Working with group X196
+-------------
+Working with group X224
+-------------
+Working with group X232
+-------------
+Working with group X237
+-------------
+Working with group X281
+-------------
+Working with group X284
+-------------
+Working with group X288
+-------------
+Working with group X289
+-------------
+Working with group X291
+-------------
+Working with group X302
+-------------
+Working with group X304
+-------------
+Working with group X308
+-------------
+Working with group X309
+-------------
+Working with group X312
+-------------
+Working with group X318
+-------------
+Working with group X320
+-------------
+Working with group X323
+-------------
+Working with group X324
+-------------
+Working with group X349
+-------------
+Working with group X350
+-------------
+Working with group X441
+Wow, it works mod 16 
+-------------
+Working with group X20a
+-------------
+Working with group X20b
+-------------
+Working with group X60a
+-------------
+Working with group X60b
+-------------
+Working with group X60c
+-------------
+Working with group X60d
+-------------
+Working with group X76a
+-------------
+Working with group X76b
+-------------
+Working with group X76c
+-------------
+Working with group X76d
+-------------
+Working with group X177
+-------------
+Working with group X178
+-------------
+Working with group X619
+-------------
+Working with group X649
+-------------
+Working with group X57a
+-------------
+Working with group X57b
+-------------
+
+>>  2*Trace(g) eq 0} eq 0;) | 2*Trace(g) eq 0} eq 0;
+                          ^
+User error: bad syntax
+
+Total time: 400.110 seconds, Total memory usage: 359.06MB
+398.86user 1.27system 6:41.48elapsed 99%CPU (0avgtext+0avgdata 368192maxresident)k
+24inputs+376outputs (0major+104875minor)pagefaults 0swaps
