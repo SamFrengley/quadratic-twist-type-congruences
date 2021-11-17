@@ -1,6 +1,8 @@
 EXE=/alt/applic/magma/2.23-8/magma.avx64.exe
-Magma V2.23-8     Mon Nov  8 2021 11:53:26 on coral    [Seed = 1905854219]
+Magma V2.23-8     Wed Nov 17 2021 10:59:45 on haydn    [Seed = 2340293364]
 Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "3-7-prop.m"
 Loading "../functions/qttcong.m"
 There are 60 groups which work mod 8
 Working with group X7
@@ -126,10 +128,6 @@ Working with group X57a
 Working with group X57b
 -------------
 
->>  2*Trace(g) eq 0} eq 0;) | 2*Trace(g) eq 0} eq 0;
-                          ^
-User error: bad syntax
-
-Total time: 400.110 seconds, Total memory usage: 359.06MB
-398.86user 1.27system 6:41.48elapsed 99%CPU (0avgtext+0avgdata 368192maxresident)k
-24inputs+376outputs (0major+104875minor)pagefaults 0swaps
+Total time: 339.280 seconds, Total memory usage: 359.06MB
+338.57user 0.73system 5:40.66elapsed 99%CPU (0avgtext+0avgdata 368224maxresident)k
+0inputs+72outputs (0major+104937minor)pagefaults 0swaps
