@@ -1,6 +1,6 @@
 /*
     Checking that the curves with finitely many points in Section
-    6 have no exceptional points.
+    6 have no exceptional points. Moreover we list the CM discriminants.
 */
 
 // ----------------
@@ -14,14 +14,19 @@ assert Rank(E) eq 0;
 T, t := TorsionSubgroup(E);
 T := {t(P) : P in T};
 
+cm_discriminants := {};
+
 for pt in T do
     jp := j(pt);
     if jp[2] ne 0 then 
         jp := jp[1]/jp[2];
-        assert HasComplexMultiplication(EllipticCurveWithjInvariant(jp));
+        has_cm, D := HasComplexMultiplication(EllipticCurveWithjInvariant(jp));
+        assert has_cm;
+        Include(~cm_discriminants, D);
     end if;
 end for;
 
+assert cm_discriminants eq {-3,-11};
 
 // ----------------
 // X(ns2, s5)/delta
@@ -34,14 +39,19 @@ assert Rank(E) eq 0;
 T, t := TorsionSubgroup(E);
 T := {t(P) : P in T};
 
+cm_discriminants := {};
+
 for pt in T do
-    jp := j(pt);
+    jp := j(pt); 
     if jp[2] ne 0 then 
         jp := jp[1]/jp[2];
-        assert HasComplexMultiplication(EllipticCurveWithjInvariant(jp));
+        has_cm, D := HasComplexMultiplication(EllipticCurveWithjInvariant(jp));
+        assert has_cm;
+        Include(~cm_discriminants, D);
     end if;
 end for;
 
+assert cm_discriminants eq {-4,-11, -19};
 
 // ----------------
 // X(G11(sqrt{-1}), ns3)/delta
@@ -54,14 +64,19 @@ assert Rank(E) eq 0;
 T, t := TorsionSubgroup(E);
 T := {t(P) : P in T};
 
+cm_discriminants := {};
+
 for pt in T do
     jp := j(pt);
     if jp[2] ne 0 then 
         jp := jp[1]/jp[2];
-        assert HasComplexMultiplication(EllipticCurveWithjInvariant(jp));
+        has_cm, D := HasComplexMultiplication(EllipticCurveWithjInvariant(jp));
+        assert has_cm;
+        Include(~cm_discriminants, D);
     end if;
 end for;
 
+assert cm_discriminants eq {-4};
 
 // ----------------
 // X(G9, ns3+)
@@ -74,10 +89,16 @@ assert Rank(E) eq 0;
 T, t := TorsionSubgroup(E);
 T := {t(P) : P in T};
 
+cm_discriminants := {};
+
 for pt in T do
-    jp := j(pt);
+    jp := j(pt); 
     if jp[2] ne 0 then 
         jp := jp[1]/jp[2];
-        assert HasComplexMultiplication(EllipticCurveWithjInvariant(jp));
+        has_cm, D := HasComplexMultiplication(EllipticCurveWithjInvariant(jp));
+        assert has_cm;
+        Include(~cm_discriminants, D);
     end if;
 end for;
+
+assert cm_discriminants eq {-4};
